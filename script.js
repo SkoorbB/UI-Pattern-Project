@@ -8,6 +8,7 @@ fetch(url).then(res => {
 })
 
 let body = document.querySelector(".grid");
+let img =document.querySelector(".img")
 
 fetch(url).then(res => {
     return res.json();
@@ -15,10 +16,9 @@ fetch(url).then(res => {
     .then(res => {
     for (let i = 0; i < url.length; i++) {
         if (url.length = 8) {
-            return;
+            return url;
         }
-        let img = document.createElement("img");
-        img.classList.add("imgs");
-        body.appendChild(img);
+       let dimg = res[0].url
+        img.setAttribute('src', dimg);
     }
 })
