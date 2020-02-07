@@ -11,8 +11,12 @@ fetch(url)
     return res.json();
 })
 
-let body = document.querySelector(".grid");
-let img =document.querySelector(".img")
+let grid = document.querySelector(".grid");
+let img =document.querySelectorAll(".img");
+let bill = document.querySelector("#img1");
+let luke = document.querySelector("#img2");
+let leia = document.querySelector("#img3");
+let kenobi = document.querySelector("#img4");
 
 fetch(url).then(res => {
 
