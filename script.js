@@ -1,6 +1,6 @@
 
 //found url
-let url = "https://swapi.co/api/peopel/"
+let url = "https://swapi.co/api/people/"
 fetch(url)
     /*headers : {
         'x-api-key': '
