@@ -20,7 +20,6 @@ fetch(url).then(res => {
 })
     .then(res => {
     for (let i = 0; i < url.length; i++) {
-       let dimg = res[0].url
-        img.setAttribute('src', dimg);
+      
     }
 })

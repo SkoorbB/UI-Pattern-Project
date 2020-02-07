@@ -53,5 +53,11 @@
     object-fit: cover;
     width: 200px ;
     height: 200px ;
+}
 
+.footer {
+    grid-row: 5;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: grey;  
 }
