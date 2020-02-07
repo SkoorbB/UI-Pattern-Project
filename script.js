@@ -20,7 +20,7 @@ fetch(url).then(res => {
 })
     .then
       
-    }
+    
 })
 
 //create a div that is within the body but outside the main grid 
