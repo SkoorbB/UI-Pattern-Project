@@ -18,8 +18,14 @@ fetch(url).then(res => {
 
     return res.json();
 })
-    .then(res => {
-    for (let i = 0; i < url.length; i++) {
+    .then
       
     }
 })
+
+//create a div that is within the body but outside the main grid 
+//hide the div (default)
+//create eventlistener for each pic to show the div (if hidden)
+//have a button to hide the div (if shown)
+//name
+//films
