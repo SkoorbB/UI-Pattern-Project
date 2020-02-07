@@ -1,6 +1,6 @@
 
 //found url
-let url = "swapi.co"
+let url = "https://swapi.co/api/peopel/"
 fetch(url)
     /*headers : {
         'x-api-key': '
@@ -20,9 +20,6 @@ fetch(url).then(res => {
 })
     .then(res => {
     for (let i = 0; i < url.length; i++) {
-        if (url.length = 8) {
-            return url;
-        }
        let dimg = res[0].url
         img.setAttribute('src', dimg);
     }
