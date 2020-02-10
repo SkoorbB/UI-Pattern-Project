@@ -123,3 +123,34 @@ let leia = document.querySelector("#img3");
     console.log("leia");
 
 })
+
+let kenobi = document.querySelector("#img4");
+    
+  leia.addEventListener("click", function (e) {
+    e.preventDefault();
+    fetch(url).then(res => {
+        return res.json();
+})
+    .then(res => {
+        document.querySelector(".card").style.display = "block";
+        let name = res.results[9].name;
+        console.log(name);
+        document.querySelector("#cardGI").setAttribute("src", "https://vignette.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png/revision/latest?cb=20130305010406")
+        let cardN = document.createTextNode(name);
+        document.querySelector(".cardGH").appendChild(cardN)
+
+        //setattribute of name 
+        })
+        .then(res => {
+        console.log(res.results[9].birth-year)
+        let lists = document.createElement("li")
+        document.querySelector(".cardGL").appendChild(lists)
+        //steatrribute of lists
+        let leiaBY= res.results[9].birth-year
+        let bY3 = document.createTextNode(leiaBY)
+        lists.appendChild(bY3)
+
+    })
+    console.log("kenobi");
+
+})
