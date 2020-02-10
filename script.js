@@ -1,6 +1,5 @@
 let grid = document.querySelector(".grid");
 let img = document.querySelectorAll(".img");
-let leia = document.querySelector("#img3");
 let kenobi = document.querySelector("#img4");
 let card = document.querySelector(".card")
 let cardH = document.querySelector(".cardGH")
@@ -50,11 +49,11 @@ let cardImg = document.querySelector("#cardGI")
 
 })
  
-    /*let offB = document.querySelector(".cardGB")
+    let offB = document.querySelector(".cardGB")
 offB.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".card").style.display = "none";
-})*/
+})
 
 //create a div that is within the body but outside the main grid 
 //hide the div (default)
@@ -91,5 +90,36 @@ offB.addEventListener("click", function (e) {
 
     })
     console.log("luke");
+
+})
+
+let leia = document.querySelector("#img3");
+    
+  leia.addEventListener("click", function (e) {
+    e.preventDefault();
+    fetch(url).then(res => {
+        return res.json();
+})
+    .then(res => {
+        document.querySelector(".card").style.display = "block";
+        let name = res.results[4].name;
+        console.log(name);
+        document.querySelector("#cardGI").setAttribute("src", "https://vignette.wikia.nocookie.net/starwars/images/0/00/BiggsHS-ANH.png/revision/latest?cb=20130305010406")
+        let cardN = document.createTextNode(name);
+        document.querySelector(".cardGH").appendChild(cardN)
+
+        //setattribute of name 
+        })
+        .then(res => {
+        console.log(res.results[4].birth-year)
+        let lists = document.createElement("li")
+        document.querySelector(".cardGL").appendChild(lists)
+        //steatrribute of lists
+        let leiaBY= res.results[4].birth-year
+        let bY3 = document.createTextNode(leiaBY)
+        lists.appendChild(bY3)
+
+    })
+    console.log("leia");
 
 })
